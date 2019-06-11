@@ -21,8 +21,8 @@
 class main {
 public:
     std::string loadFile();
-    void printURLs(std::string text, std::ofstream& to);
-    std::string refactorText(std::string);
+    std::set<std::string> printURLs(std::string text, std::ofstream& to);
+    std::string refactorText(std::string text, std::set<std::string> urls);
 };
 
 
